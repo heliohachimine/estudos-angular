@@ -13,6 +13,10 @@ export class AppComponent {
 
   isMouseOver: boolean = false;
 
+  nomeDoCurso: string = 'Angular';
+
+  
+
   botaoClick(){
     console.log("botão clicado");
     alert("Botão Clicado!");
