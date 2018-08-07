@@ -15,6 +15,8 @@ export class AppComponent {
 
   nomeDoCurso: string = 'Angular';
 
+  valorInicial: number = 15;
+
   
 
   botaoClick(){
@@ -31,6 +33,10 @@ export class AppComponent {
 
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
   }
 }
 
