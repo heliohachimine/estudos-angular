@@ -17,6 +17,10 @@ export class AppComponent {
 
   valorInicial: number = 15;
 
+  valor: number = 5;
+
+  deletarCiclo: boolean = false;
+
   
 
   botaoClick(){
@@ -37,6 +41,14 @@ export class AppComponent {
 
   onMudouValor(evento){
     console.log(evento.novoValor);
+  }
+
+  mudarValor(){
+    this.valor++;
+  }
+
+  destruirCiclo(){
+    this.deletarCiclo = true;
   }
 }
 
